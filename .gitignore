@@ -1,0 +1,5 @@
+# Exclude all compiled code.
+public/
+
+# Exclude node_modules.
+node_modules
