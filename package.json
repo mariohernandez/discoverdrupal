@@ -1,0 +1,23 @@
+{
+  "name": "discoverdrupal",
+  "version": "1.0.0",
+  "description": "Web application for discover drupal training program.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariohernandez/discoverdrupal.git"
+  },
+  "keywords": [
+    "drupal",
+    "training"
+  ],
+  "author": "Mario Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariohernandez/discoverdrupal/issues"
+  },
+  "homepage": "https://github.com/mariohernandez/discoverdrupal#readme"
+}
