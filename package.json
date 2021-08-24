@@ -4,7 +4,9 @@
   "description": "Web application for discover drupal training program.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,15 @@
     "url": "https://github.com/mariohernandez/discoverdrupal/issues"
   },
   "homepage": "https://github.com/mariohernandez/discoverdrupal#readme",
-  "dependencies": {
-    "gulp": "^4.0.2"
+  "devDependencies": {
+    "autoprefixer": "^10.3.2",
+    "browser-sync": "^2.27.5",
+    "cssnano": "^5.0.8",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.38.1"
   }
 }
