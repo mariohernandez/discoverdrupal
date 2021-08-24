@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/mariohernandez/discoverdrupal/issues"
   },
-  "homepage": "https://github.com/mariohernandez/discoverdrupal#readme"
+  "homepage": "https://github.com/mariohernandez/discoverdrupal#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
 }
