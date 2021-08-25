@@ -2,6 +2,7 @@
 
 var gulp = require('gulp'),
     sass = require('gulp-sass')(require('sass')),
+    stylelint = require('gulp-stylelint'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     cssnano = require('cssnano'),
@@ -39,6 +40,20 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
+function Gulpstylelint() {
+  return gulp
+    .src(paths.css.src)
+    .pipe(stylelint({
+      reporters: [
+        {
+          formatter: 'string',
+          console: true
+        }
+      ]
+    })
+  );
+}
+
 function javascript() {
   return gulp
     .src(paths.js.src)
@@ -68,12 +83,13 @@ function watch() {
   });
 
   gulp.watch(paths.css.src, styles);
+  gulp.watch(paths.css.src, Gulpstylelint);
   gulp.watch(paths.js.src, javascript);
   gulp.watch(paths.html.src, html).on('change', browserSync.reload);
 }
 
 exports.watch = watch;
 
-var build = gulp.parallel(styles, javascript, html, images, watch);
+var build = gulp.parallel(styles, Gulpstylelint, javascript, html, images, watch);
 
 gulp.task('default', build);

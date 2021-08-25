@@ -31,6 +31,9 @@
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "sass": "^1.38.1"
+    "gulp-stylelint": "^13.0.0",
+    "sass": "^1.38.1",
+    "stylelint": "^13.13.1",
+    "stylelint-scss": "^3.20.1"
   }
 }
