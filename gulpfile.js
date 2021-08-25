@@ -1,8 +1,12 @@
 'use strict';
 
+const del = require('del');
+const { task } = require('gulp');
+
 var gulp = require('gulp'),
     sass = require('gulp-sass')(require('sass')),
     stylelint = require('gulp-stylelint'),
+    deleteCSS = require('del'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     cssnano = require('cssnano'),
@@ -88,8 +92,15 @@ function watch() {
   gulp.watch(paths.html.src, html).on('change', browserSync.reload);
 }
 
+// Exports watch task.
 exports.watch = watch;
-
 var build = gulp.parallel(styles, Gulpstylelint, javascript, html, images, watch);
-
 gulp.task('default', build);
+
+// Exports clean task.
+function cleanCss() {
+  return del(['./app/dist/css/*'], {force: true});
+}
+exports.cleanCss = clean;
+var clean = gulp.parallel(cleanCss);
+gulp.task('clean', clean);
