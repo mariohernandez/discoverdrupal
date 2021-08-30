@@ -1,0 +1,26 @@
+{
+  "name": "discoverdrupal",
+  "version": "1.0.0",
+  "description": "My first front-end project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariohernandez/discoverdrupal.git"
+  },
+  "keywords": [
+    "frontend",
+    "discoverdrupal"
+  ],
+  "author": "Kalandra Robinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariohernandez/discoverdrupal/issues"
+  },
+  "homepage": "https://github.com/mariohernandez/discoverdrupal#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
