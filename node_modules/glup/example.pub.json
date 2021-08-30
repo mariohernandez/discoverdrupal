@@ -1,0 +1,32 @@
+{
+    "*": {
+        "paths": {
+            "img": "assets/images",
+            "tpl": "assets/templates"
+        }
+    },
+    "local": {
+        "paths": {
+            "js": "builds/local/scripts",
+            "css": "builds/local/stylesheets"
+        }
+    },
+    "testing": {
+        "paths": {
+            "js": "builds/testing/scripts",
+            "css": "builds/testing/stylesheets"
+        }
+    },
+    "staging": {
+        "paths": {
+            "js": "builds/staging/scripts",
+            "css": "builds/staging/stylesheets"
+        }
+    },
+    "production": {
+        "paths": {
+            "js": "builds/production/scripts",
+            "css": "builds/production/stylesheets"
+        }
+    }
+}

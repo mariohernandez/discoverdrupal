@@ -1,0 +1,26 @@
+{
+  "name": "discoverdrupal",
+  "version": "1.0.0",
+  "description": "Discover Drupal project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariohernandez/discoverdrupal.git"
+  },
+  "keywords": [
+    "frontend",
+    "discoverdrupal"
+  ],
+  "author": "Pawna Avalani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariohernandez/discoverdrupal/issues"
+  },
+  "homepage": "https://github.com/mariohernandez/discoverdrupal#readme",
+  "dependencies": {
+    "glup": "^1.0.14"
+  }
+}
