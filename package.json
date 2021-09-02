@@ -4,7 +4,9 @@
   "description": "My first front-end project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,20 @@
     "url": "https://github.com/mariohernandez/discoverdrupal/issues"
   },
   "homepage": "https://github.com/mariohernandez/discoverdrupal#readme",
-  "dependencies": {
-    "gulp": "^4.0.2"
+  "devDependencies": {
+    "autoprefixer": "^10.3.3",
+    "browser-sync": "^2.27.5",
+    "css": "^3.0.0",
+    "cssnano": "^5.0.8",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-stylelint": "^13.0.0",
+    "nano": "^9.0.4",
+    "sass": "^1.39.0",
+    "stylelint": "^13.13.1",
+    "stylelint-scss": "^3.20.1"
   }
 }
