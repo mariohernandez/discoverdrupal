@@ -94,7 +94,7 @@ function watch() {
 
 // Exports watch task.
 exports.watch = watch;
-var build = gulp.parallel(styles, Gulpstylelint, javascript, html, images, watch);
+var build = gulp.parallel(styles, Gulpstylelint, javascript, html, images);
 gulp.task('default', build);
 
 // Exports clean task.
