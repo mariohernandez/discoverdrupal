@@ -5,8 +5,10 @@ This is a demo repository to demonstrate how a front-end automated workflow can 
 - CSS and JS compiling
 - Compile of HTML
 - Linting of CSS and JavaScript
-- Browser sync
-- Sourcemaps
+- Clean CSS directory
+- Browser reload
+- CSS Sourcemaps
+- Minifying of CSS and JavaScript
 
 ## Running the workflow
 #### _Worflow requires NodeJS and NPM to be installed_.
