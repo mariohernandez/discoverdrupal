@@ -22,5 +22,10 @@
   "homepage": "https://github.com/mariohernandez/discoverdrupal#readme",
   "dependencies": {
     "glup": "^1.0.14"
+  },
+  "devDependencies": {
+    "cssnano": "^5.0.8",
+    "gulp": "^4.0.2",
+    "sass": "^1.39.0"
   }
 }
